@@ -57,6 +57,8 @@ extern "C" {
 #define RT_SUBVERSION                   0L              /**< minor version number */
 #define RT_REVISION                     3L              /**< revise version number */
 
+#define RT_VERSION_CHECK(major, minor, revise)          ((major * 10000) + (minor * 100) + revise)
+
 /* RT-Thread version */
 #define RTTHREAD_VERSION                ((RT_VERSION * 10000) + \
                                          (RT_SUBVERSION * 100) + RT_REVISION)
